@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 14%;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0,);
+  z-index: 700;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    color: red;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+
+.nav-link:hover{
+    color: red;
+    transition: 0.3s;
+}
+
+.nav-item{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    padding-left: 35px;
+}
+
+.btn0{
+    height: 52px;
+    width: 130px;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s;
+    background-color: rgb(248, 83, 83);
+}
+
+.btn0:hover{
+    background-color: rgb(214, 11, 11);
+    transition: all 0.4s;
+}
+
+.btn1{
+    height: 52px;
+    width: 130px;
+    outline: none;
+    border: 2px solid rgb(248, 20, 20);
+    color: rgb(248, 20, 20);
+    cursor: pointer;
+    transition: all 0.4s;
+    background-color: transparent;
+}
+
+
+.btn3{
+    height: 52px;
+    width: 130px;
+    outline: none;
+    border: 2px solid rgb(248, 20, 20);
+    color: rgb(248, 20, 20);
+    cursor: pointer;
+    transition: all 0.4s;
+    background-color: transparent;
+}
+
+.btn1:hover{
+    background-color: rgb(214, 11, 11);
+    transition: all 0.4s;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+/* -======================main section========================= */
+
+.main{
+    background: url();
+    background-size: cover;
+    min-height: 95vh;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-align: start;
+}
+
+.main h3{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgb(136, 8, 8);
+    text-align: start;
+}
+
+.main p{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-align: start;
+}
+
+.main input{
+    height: 71px;
+    width: 70%;
+    border: none;
+    outline: none;
+    padding: 15px;
+}
+
+.btn2{
+    height: 70px;
+    width: 25%;
+    background-color: rgb(243, 73, 73);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.about-content{
+    font-size: 1rem;
+    font-weight: 800;
+    color: rgb(0, 0, 1);
+    text-align: center;
+}
+
+.heading{
+    font-size: 5rem;
+    font-weight: 800;
+    color: black;
+}
+
+h6{
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+.card{
+    color: black;
+}
+
+.card i{
+    font-size: 2rem;
+}
+
+.card-title{
+    color: red;
+}
+
+
+.container .card{
+    background: white;
+    width: 800px;
+    height: 350px;
+}
+
+
+.skills{
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    margin: 20px 0;
+    z-index: 1;
+}
+
+.bar{
+    height: 14px;
+    background: black;
+    border-radius: 3px;
+}
+
+.per{
+    height: 14px;
+    background: red;
+    border-radius: 3px;
+    position: relative;
+    animation: fillbars 2.5s 1;
+    z-index: 1;
+}
+
+.per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: black;
+    border-radius: 4px;
+    font-size: 12px;
+    right: 0;
+    z-index: 1;
+}
+
+.per::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    right: 0;
+    border-radius: 2px;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+}
+
+.social{
+    font-size: 2rem;
+}
+
+.social i{
+    display: flex;
+    margin-right: 40px;
+    justify-content: center;
+    color: white;
+}
+
+.social a {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.social i{
+    text-align: center;
+}
+
+.social :hover{
+    cursor: pointer;
+    color: red;
+  }
+
+  div {
+    text-align: center;
+    margin: 20px;
+    text-decoration: none;
+  }
+  
+  a {
+    display: inline-block;
+  }
+  
+  i {
+    vertical-align: middle;
+  }
+
+  .no-underline {
+    text-decoration: none;
+  }
+
+
+  .home-img{
+    width: 410px;
+    height: 410px;
+  }
+  
+  .home-img .glowing-circle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: red;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .home-img .glowing-circle::after{
+    content: '';
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    background: #0c1022;
+    border-radius: 50%;
+  }
+
+  .glowing-circle .image{
+    position: relative;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .image img{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 350px;
+    object-fit: cover;
+  }
